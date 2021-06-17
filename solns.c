@@ -63,7 +63,7 @@ int isPrime(int a){
     }
 }
 
-int prime(int n, int ar[]){
+int factors(int n, int ar[]){
     int a=2,c=0;
     while(!isPrime(n)){
         if(n%a==0 && isPrime(a)){
