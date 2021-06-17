@@ -30,8 +30,11 @@ float average(int arr[], int len){
 }
 
 int mode(int arr[], int len){
-  int max_num=max(arr,len);
-  int h[max-num]={0};
+  const int max_num=max(arr,len)+1;
+  int h[max_num];
+  for(int i=0;i<max_num;i++){
+      h[i]=0;
+  }
   for(int i=0;i<len;i++){
     h[arr[i]]++;
   }
